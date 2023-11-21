@@ -23,50 +23,6 @@ input{
     height: 30px;;    
 }
 
-/* TOP BAR */
-.topBar{
-    position: fixed;
-    background-color: #2F3033;
-    color: aliceblue;
-    height:90px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1;
-    padding-left: 2%;
-}
-
-
-.topBar > div > img{
-    margin-left: 40px;
-    
-}
-
-#topBarPages{
-    display: flex;
-    margin-right: 5%;
-    flex-direction: row-reverse;
-    height: 100%;
-    width:50%;
-    gap:20%;
-    align-items: center ;
-}
-
-#topBarPages > div{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-#topBarPages > div > a{
-    font-size: 30px;
-    text-decoration: none;
-    color: aliceblue;
-}
-
-
-
 
 /* NAV */
 
@@ -198,6 +154,10 @@ nav ul li a{
     padding-bottom: 5%;
 }
 
+#contactPagInfo{
+    height: 600px;
+}
+
 #emailFormDiv{
     display: flex;
     flex-direction: column;
@@ -221,6 +181,25 @@ nav ul li a{
     margin-bottom: 3%;
 }
 
+@media (max-width: 1050px){
+    #contactPag{
+        flex-wrap: wrap;
+    }
+
+    #contactPag > div{
+        width: 100%;
+    }
+
+    #map{
+        margin: 0% 10%;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+
+
 
 
 
@@ -236,7 +215,6 @@ nav ul li a{
 .footerContact{
     display: flex;
     padding-left: 20%;
-    
     align-items: center;
 }
 
@@ -253,4 +231,21 @@ nav ul li a{
 .footer > p{
     text-align: center;
     
+}
+
+@media (max-width: 1050px){
+    .footer{
+        padding-bottom: 0px;
+    }
+
+    .footer > p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footerContact{
+        height: 50px;
+        
+    }
+
 }
